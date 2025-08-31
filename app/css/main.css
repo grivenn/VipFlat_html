@@ -1,0 +1,177 @@
+@font-face {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/Ubuntu.ttf");
+}
+@font-face {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/Ubuntu-Medium.ttf");
+}
+h1 {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+}
+a:link, a:visited {
+  color: #fff;
+}
+
+p {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  justify-content: center;
+  background-color: #84c3ff;
+}
+
+.inner {
+  width: 430px;
+  height: 932px;
+  border: 2px solid #fff;
+  border-radius: 35px;
+  background-color: #000;
+  box-shadow: 0 30px 80px #50819e;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.inner-left {
+  margin-right: 50px;
+}
+.inner-right {
+  margin-left: 50px;
+}
+.inner:last-child {
+  margin-top: auto;
+}
+
+.section {
+  margin: 0 !important;
+}
+.section-top {
+  height: 320px;
+  padding: 42px 43px 33px 44px;
+}
+.section-botm {
+  padding: 0 43px 43px 44px;
+}
+.section-footter {
+  padding: 28px 43px 43px 44px;
+  text-align: right;
+}
+
+.stars {
+  width: 145px;
+}
+
+.container_props {
+  margin-top: 26px;
+}
+
+.props {
+  margin-bottom: 17px;
+}
+
+.propText {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  margin-right: 12px;
+}
+
+.mainePhoto {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.text-botm {
+  margin-top: 28px;
+  line-height: 1.6;
+}
+
+.text-footter {
+  font-size: 12px;
+}
+
+.text_epert {
+  margin-top: 42px;
+  margin-bottom: 21px;
+}
+
+.text-domclass {
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+.ratings {
+  width: 100%;
+}
+
+.raw {
+  margin-bottom: 8px;
+}
+
+.row-text {
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.text_rating {
+  font-size: 16px;
+  line-height: 0;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.rating-big {
+  font-size: 30px;
+}
+
+.line {
+  height: 1px;
+  margin-top: 17px;
+  border-bottom: 1px solid #ffffff;
+}
