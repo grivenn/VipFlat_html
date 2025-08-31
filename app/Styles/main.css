@@ -53,7 +53,7 @@ ul {
   left: 0;
   display: flex;
   justify-content: center;
-  background-color: #84c3ff;
+  background-color: rgba(132, 200, 255, 0.6784313725);
   overflow: auto;
 }
 
