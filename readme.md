@@ -1,7 +1,7 @@
-<h1>Website for practice</h1>
+<h1>VipFlat Справочник</h1>
 
 
 <p>
-	<a href="https://grivenn.github.io/mobile_NYC_LA/app/" target="_blank"><img src="https://raw.githubusercontent.com/grivenn/mobile_NYC_LA/master/app/images/preview.jpg" alt="Site Preview"></a>
-	<p>Click picture for preview:</p>
+	<a href="https://grivenn.github.io/VipFlat_html/app/" target="_blank"><img src="https://raw.githubusercontent.com/grivenn/VipFlat_html/main/app/image/preview.jpg" alt="Site Preview"></a>
+	<p>Click picture to open page:</p>
 </p>
