@@ -52,10 +52,9 @@ ul {
   top: 0;
   left: 0;
   display: flex;
-  align-items: center;
-  padding-left: 25px;
   justify-content: center;
   background-color: #84c3ff;
+  overflow: auto;
 }
 
 .inner {
@@ -67,6 +66,8 @@ ul {
   box-shadow: 0 30px 80px #50819e;
   background-repeat: no-repeat;
   position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .inner-left {
   margin-right: 50px;
