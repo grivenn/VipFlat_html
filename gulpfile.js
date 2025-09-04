@@ -14,7 +14,7 @@ const 	gulp			= require('gulp'),
 gulp.task('browser-sync', function() {
 	browserSync({
 		server: {
-			baseDir: 'dist'
+			baseDir: 'app'
 			// baseDir: 'app'
 		},
 		notify: false,
@@ -31,7 +31,7 @@ gulp.task('js', function() {
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)
-	.pipe(gulp.dest('dist/js'))
+	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({ stream: true}));
 });
 
@@ -42,7 +42,7 @@ gulp.task('sass', function() {
 	// .pipe(rename({suffix: '.min', prefix : ''}))
 	// .pipe(autoprefixer(['last 15 versions']))
 	// .pipe(cleanCSS()) // Опционально, закомментировать при отладке
-	.pipe(gulp.dest('dist/Styles'))
+	.pipe(gulp.dest('app/Styles'))
 	.pipe(browserSync.reload({ stream: true }));
 });
 
@@ -53,13 +53,13 @@ gulp.task('sass', function() {
 
 gulp.task('code', function() {
 	// return gulp.src('app/**/*.html')
-	return gulp.src('app/main.html')
+	return gulp.src('app/html/main.html')
 	.pipe(fileInclude({
 		prefix: '@@',    // Префикс для вставки
 		basepath: '@file' // Путь к файлам
 	}))
 	.pipe(rename('index.html'))
-	.pipe(gulp.dest('dist'))
+	.pipe(gulp.dest('app'))
 	.pipe(browserSync.reload({ stream: true }))
 });
 
@@ -70,4 +70,7 @@ gulp.task('watch', function() {
 	gulp.watch(['app/*.html', 'app/partials/*.html'], gulp.parallel('code'));
 });
 
-gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('sass', 'code', 'browser-sync', 'watch'));
+
+// Общая задача
+gulp.task('build', gulp.series('sass', 'code'));
