@@ -53,11 +53,12 @@ gulp.task('sass', function() {
 
 gulp.task('code', function() {
 	// return gulp.src('app/**/*.html')
-	return gulp.src('app/index.html')
+	return gulp.src('app/main.html')
 	.pipe(fileInclude({
 		prefix: '@@',    // Префикс для вставки
 		basepath: '@file' // Путь к файлам
 	}))
+	.pipe(rename('index.html'))
 	.pipe(gulp.dest('dist'))
 	.pipe(browserSync.reload({ stream: true }))
 });
